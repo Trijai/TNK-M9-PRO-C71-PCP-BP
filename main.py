@@ -107,7 +107,7 @@ while True:
                     # Else set the choice variable to option2
 
                     if choice == solution:
-                        cameraFeedImg = cv2.putText(cameraFeedImg, "Corret!", (int(
+                        cameraFeedImg = cv2.putText(cameraFeedImg, "Correct!", (int(
                             wWidth/1.5), int(wHeight)-40), cv2.FONT_HERSHEY_DUPLEX, 1.0, (0, 255, 0), 2)
                     else:
                         cameraFeedImg = cv2.putText(cameraFeedImg, "Wrong!", (int(
