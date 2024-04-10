@@ -100,11 +100,15 @@ while True:
 
                 # Check if finger is over the choice area i.e y-axis value is less then 100 (Replace the following if condition)
                 if (False):
-                    # There are only two options so check if x-axis of fingerTop is less then wWidth/2
+                    if (indexFingerTop[1] < 100):
 
-                    # Set choice variable to option 1
-
+                        # There are only two options so check if x-axis of fingerTop is less then wWidth/2
+                        if (indexFingerTop[0] < wWidth/2):
+                            # Set choice variable to option 1
+                            choice = option1
                     # Else set the choice variable to option2
+                    else:
+                        choice = option2
 
                     if choice == solution:
                         cameraFeedImg = cv2.putText(cameraFeedImg, "Correct!", (int(
